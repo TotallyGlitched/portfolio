@@ -1,0 +1,22 @@
+$uxp-body: #1e1e1e;
+$uxp-blue: #40C9FF;
+$uxp-pink: #E81CFF;
+$uxp-deg: 180deg;
+$uxp-grad: $uxp-blue, $uxp-pink;
+
+$uxp-font: 'Montserrat', sans-serif;
+
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == ipad {    
+        @media only screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  
+  @if $breakpoint == mobile {
+      @media only screen and (max-width: 476px) {
+          @content;
+    }
+  }
+}

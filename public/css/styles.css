@@ -1,0 +1,204 @@
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.uxp-content {
+  min-height: 100vh;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bg-uxp-gray {
+  background-color: #1e1e1e;
+}
+
+.btn-uxp-black {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0A0A0A;
+  --bs-btn-border-color: #0A0A0A;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #464646;
+  --bs-btn-hover-border-color: #464646;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0, 0;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #464646;
+  --bs-btn-active-border-color: #464646;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0A0A0A;
+  --bs-btn-disabled-border-color: #0A0A0A;
+}
+
+.btn-uxp-outline-black {
+  --bs-btn-color: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: white;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: white;
+  --bs-gradient: none;
+}
+
+.uxp-menu {
+  background: linear-gradient(180deg, #40C9FF, #E81CFF);
+  padding-right: 0.15rem;
+}
+.uxp-menu .btn-close {
+  box-shadow: none;
+}
+.uxp-menu .offcanvas-body {
+  padding-left: 2rem;
+  background-color: #000;
+}
+.uxp-menu .offcanvas-body a {
+  display: inline-block;
+  transition: all 200ms;
+}
+.uxp-menu .offcanvas-body a:hover svg {
+  color: #40C9FF;
+}
+.uxp-menu .offcanvas-body .links a {
+  display: block;
+  transition: all 300ms;
+  padding-top: 0.75rem;
+}
+.uxp-menu .offcanvas-body .links a:hover {
+  padding-left: 1.5rem;
+}
+
+ul.uxp-inline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.uxp-inline li {
+  display: inline;
+}
+
+.uxp-nm {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-banner img {
+  padding-top: 0.5rem;
+  padding-right: 3.25rem;
+  padding-left: 3.25rem;
+}
+
+.a-ta .t-here {
+  display: inline;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.a-ta .s-here {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 0.5rem 0.65rem;
+  display: inline;
+  transition: all 200ms !important;
+  background: linear-gradient(180deg, #40C9FF, #E81CFF);
+}
+.a-ta:hover .t-here {
+  background-color: rgb(212, 212, 212);
+  color: #1e1e1e;
+}
+.a-ta:hover .s-here {
+  border: 1px solid rgb(41, 41, 41);
+  background: linear-gradient(20deg, #40C9FF, #E81CFF);
+}
+
+.mt-neg {
+  margin-top: -11.5rem;
+}
+
+.mt-pos {
+  padding-top: 9rem;
+}
+
+.a-ta {
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: #212529;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0.375rem;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  display: inline-block;
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a-ta {
+    transition: none;
+  }
+}
+.xp-menu .menu-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.xp-menu .grad-title {
+  background: -webkit-linear-gradient(-90deg, #40C9FF, #E81CFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.xp-menu .uxp-card {
+  display: block;
+  border-radius: 5px;
+  padding: 2rem;
+  border: 1px solid white;
+  position: relative;
+}
+.xp-menu .uxp-card img {
+  width: 30%;
+}
+.xp-menu .uxp-card .menu-item {
+  right: 0;
+  left: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  position: absolute;
+}
+
+.fw-uxp-bolder {
+  font-weight: 600;
+}
